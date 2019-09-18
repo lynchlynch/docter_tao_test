@@ -97,7 +97,7 @@ for re_try_num in tqdm(re_try_list,desc='re_try'):
         try:
             print(no_data_stock)
             single_stock_data = ts.get_hist_data(no_data_stock)
-            single_stock_savepath = 'D:/pydir/stock_anly/data/Tushare/' \
+            single_stock_savepath = 'D:/pydir/Raw Data/Tushare/' \
                                     + no_data_stock + '.csv'
             single_stock_data.to_csv(single_stock_savepath)
             download_failed_stocks.remove(no_data_stock)
